@@ -1,0 +1,62 @@
+.header {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  color: var(--color-light);
+  font-size: 20px;
+
+  @include mobile-above {
+    top: 32px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+
+    @include desktop-l-above {
+      column-gap: 107px;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__menu {
+    order: 1;
+    flex: 0 1 100%;
+
+    @include desktop-above {
+      order: 0;
+      flex: 0 0 auto;
+    }
+
+    &-list {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-link {
+      padding-block: 4px;
+
+      @include hover {
+        font-weight: 500;
+        border-bottom: 3px solid var(--color-primary);
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 14px;
+  }
+}

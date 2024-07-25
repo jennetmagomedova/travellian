@@ -1,0 +1,36 @@
+.burger-button {
+  @include reset-button;
+  @include square(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  & span {
+    height: 2px;
+    width: 38px;
+    transform: scale(1);
+    background-color: var(--color-light);
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 38px;
+    background-color: var(--color-light);
+  }
+
+  &::before {
+    top: 14px;
+  }
+
+  &::after {
+    bottom: 14px;
+  }
+}
