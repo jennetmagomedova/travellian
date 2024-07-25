@@ -1,0 +1,35 @@
+.container {
+  max-width: 100%;
+  padding-inline: var(--container-padding-x);
+
+  @include desktop-xl {
+    max-width: 1556px;
+    padding-inline: 0;
+    margin-inline: auto;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visible-tablet {
+  @include tablet-above {
+    display: none !important;
+  }
+}

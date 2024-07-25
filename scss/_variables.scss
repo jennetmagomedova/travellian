@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #ff7757;
+  --color-primary-light: #ffd2c7;
+  --color-secondary: #61291c;
+  --color-secondary-dark: #331811;
+  --color-light: #fff;
+  --color-dark: #172432;
+  --color-yellow: #ffc107;
+  --color-yellow-light: #fff8f1;
+  --color-gray: #767e86;
+
+  --border-radius: 26px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 12px;
+
+  --font-family-base: "Rubik", sans-serif;
+  --font-family-accent: "Playfair Display", serif;
+  --font-family-alt: "Mulish", sans-serif;
+
+  --container-padding-x: 16px;
+
+  --transition-duration: 0.2s;
+
+  @include mobile-above {
+    --container-padding-x: 20px;
+  }
+
+  @include tablet-above {
+    --container-padding-x: 32px;
+  }
+}
