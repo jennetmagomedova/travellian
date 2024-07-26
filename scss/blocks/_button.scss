@@ -11,10 +11,7 @@
   }
 
   &-primary {
-    width: 135px;
-    padding-inline: 32px;
     background-color: var(--color-primary);
-    border-radius: var(--border-radius-small);
 
     @include hover {
       opacity: 0.8;

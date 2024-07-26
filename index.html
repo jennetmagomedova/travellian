@@ -1,65 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/styles.css">
-  <title>Travellian</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__inner container">
-      <a href="#" class="header__logo logo">
-        <img 
-          src="./images/logo-white.svg"
-          alt="Travellian" 
-          class="logo__image"
-          width="234" height="46" loading="lazy">
-      </a>
-      <nav class="header__menu hidden-tablet">
-        <ul class="header__menu-list">
-          <li class="header__menu-item active"><a href="#" class="header__menu-link">Home</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Explore</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Travel</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Blog</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Pricing</a></li>
-        </ul>
-      </nav>
-      <div class="header__controls hidden-tablet">
-        <button 
-          class="header__button button"
-          type="button">
-          Login
-        </button>
-        <button class="header__button button button-primary" type="button">
-          Sign up
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Travellian</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="header__logo logo">
+          <img
+            src="./images/logo-white.svg"
+            alt="Travellian"
+            class="logo__image"
+            width="140"
+            height="28"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-desktop">
+          <ul class="header__menu-list">
+            <li class="header__menu-item active">
+              <a href="#" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Explore</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Travel</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__controls hidden-desktop">
+          <button class="header__button button" type="button">Login</button>
+          <button
+            class="header__button header__button-primary button button-primary"
+            type="button"
+          >
+            Sign up
+          </button>
+        </div>
+        <button
+          class="header__burger-button burger-button visible-desktop"
+          type="button"
+          onclick="mobileOverlay.showModal()"
+        >
+          <div class="visually-hidden">Open menu</div>
+          <span></span>
         </button>
       </div>
-      <button 
-        class="header__burger-button burger-button visible-tablet" 
-        type="button" 
-        onclick="mobileOverlay.showModal()">
-        <div class="visually-hidden">Open menu</div>
-        <span></span>
-      </button>
-    </div>
-  </header>
+    </header>
 
-  <dialog class="mobile__overlay visible-tablet" id="mobileOverlay">
-    <form class="mobile__overlay__close-button-wrapper" method="dialog">
-      <button class="mobile__overlay__close-button cross-button" type="submit">
-        <span class="visually-hidden">Close menu</span>
-      </button>
-    </form>
-    <div class="mobile__overlay__body">
-      <ul class="mobile__overlay-list">
-        <li class="mobile__overlay-item"><a href="#" class="mobile__overlay-link">Home</a></li>
-        <li class="mobile__overlay-item"><a href="#" class="mobile__overlay-link">Explore</a></li>
-        <li class="mobile__overlay-item"><a href="#" class="mobile__overlay-link">Travel</a></li>
-        <li class="mobile__overlay-item"><a href="#" class="mobile__overlay-link">Blog</a></li>
-        <li class="mobile__overlay-item"><a href="#" class="mobile__overlay-link">Pricing</a></li>
-      </ul>
-    </div>
-  </dialog>
-</body>
+    <main class="content">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Start your unforgettable<br />journey with us.
+          </h1>
+          <div class="hero__description">
+            <p>The best travel for your jouney begins now</p>
+          </div>
+          <div class="book-now">
+            <form class="book-now__form">
+              <div class="book-now__form-wrapper">
+                <div class="book-now__form-body">
+                  <div class="book-now__field field">
+                    <label for="destination" class="field__label"
+                      >Destination</label
+                    >
+                    <input
+                      type="text"
+                      class="field__input"
+                      id="destination"
+                      placeholder="Dubai"
+                    />
+                  </div>
+                  <div class="book-now__field field">
+                    <label for="person" class="field__label">Person</label>
+                    <select class="field__input field__input-down" id="person">
+                      <option value="1">1</option>
+                      <option value="2" selected>2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <div class="book-now__field field">
+                    <label for="checkIn" class="field__label">Check in</label>
+                    <input
+                      type="text"
+                      class="field__input field__input-down"
+                      id="checkIn"
+                      placeholder="Sun, 17th Sep 2020"
+                    />
+                  </div>
+                  <div class="book-now__field field">
+                    <label for="checkOut" class="field__label">Check Out</label>
+                    <input
+                      type="text"
+                      class="field__input field__input-down"
+                      id="checkOut"
+                      placeholder="Tue, 17th Oct 2020"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="book-now__button button button-primary"
+                  type="submit"
+                >
+                  <span>Book Now</span>
+                  <svg
+                    width="60"
+                    height="44"
+                    viewBox="0 0 60 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_65_4204)">
+                      <path
+                        d="M59.2012 23.7466C60.2662 22.6816 60.2662 20.9548 59.2012 19.8897L41.8448 2.53342C40.7798 1.46835 39.0532 1.46835 37.9879 2.53342C36.9229 3.5985 36.9229 5.3253 37.9879 6.39035L53.4158 21.8182L37.9879 37.2461C36.9229 38.3111 36.9229 40.0377 37.9879 41.103C39.0532 42.168 40.7798 42.168 41.8448 41.103L59.2012 23.7466ZM4.76852e-07 24.5454H57.2727V19.0909H0L4.76852e-07 24.5454Z"
+                        fill="#55281D"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_65_4204">
+                        <rect width="60" height="43.6364" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="mobile__overlay visible-desktop" id="mobileOverlay">
+      <form class="mobile__overlay__close-button-wrapper" method="dialog">
+        <button
+          class="mobile__overlay__close-button cross-button"
+          type="submit"
+        >
+          <span class="visually-hidden">Close menu</span>
+        </button>
+      </form>
+      <div class="mobile__overlay__body">
+        <ul class="mobile__overlay-list">
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile__overlay-link">Home</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile__overlay-link">Explore</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile__overlay-link">Travel</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile__overlay-link">Blog</a>
+          </li>
+          <li class="mobile__overlay-item">
+            <a href="#" class="mobile__overlay-link">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
 </html>

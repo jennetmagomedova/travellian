@@ -1,6 +1,7 @@
 .cross-button {
   @include reset-button;
   @include square(50px);
+  outline: none;
 
   position: relative;
 
@@ -13,7 +14,7 @@
     content: "";
     position: absolute;
     top: 75%;
-    left: -10px;
+    right: 11px;
     width: 38px;
     height: 2px;
     background-color: var(--color-light);

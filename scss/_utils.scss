@@ -22,14 +22,14 @@
   overflow: hidden;
 }
 
-.hidden-tablet {
-  @include tablet {
+.hidden-desktop {
+  @include desktop {
     display: none !important;
   }
 }
 
-.visible-tablet {
-  @include tablet-above {
+.visible-desktop {
+  @include desktop-above {
     display: none !important;
   }
 }

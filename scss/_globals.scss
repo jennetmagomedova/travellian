@@ -3,9 +3,9 @@ body {
   font-size: 18px;
   font-family: var(--font-family-base);
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   color: var(--color-dark);
-  background-color: var(--color-dark);
+  background-color: var(--color-light);
 
   @include desktop-above {
     font-size: 24px;
@@ -25,18 +25,37 @@ a {
   color: inherit;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  font-family: var(--font-family-accent);
+}
+
 h1 {
   font-size: 40px;
 
-  @include mobile-above {
+  @include tablet-above {
     font-size: 54px;
   }
 
-  @include tablet-above {
+  @include desktop-above {
     font-size: 64px;
   }
 
-  @include desktop-above {
+  @include desktop-l-above {
     font-size: 84px;
   }
 }
@@ -44,11 +63,11 @@ h1 {
 h2 {
   font-size: 40px;
 
-  @include mobile-above {
+  @include tablet-above {
     font-size: 54px;
   }
 
-  @include tablet-above {
+  @include desktop-above {
     font-size: 64px;
   }
 }
@@ -56,7 +75,7 @@ h2 {
 h3 {
   font-size: 40px;
 
-  @include mobile-above {
+  @include tablet-above {
     font-size: 54px;
   }
 }

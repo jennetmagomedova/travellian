@@ -25,6 +25,13 @@
 
   &__logo {
     flex-shrink: 0;
+
+    @include tablet-above {
+      & img {
+        width: 234px;
+        height: 46px;
+      }
+    }
   }
 
   &__menu {
@@ -58,5 +65,11 @@
     align-items: center;
     justify-content: flex-end;
     gap: 14px;
+  }
+
+  &__button-primary {
+    width: 135px;
+    padding-inline: 32px;
+    border-radius: var(--border-radius-small);
   }
 }
