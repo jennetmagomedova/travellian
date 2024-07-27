@@ -2,13 +2,13 @@
   width: 100%;
   background-color: var(--color-light);
   color: var(--color-gray);
-  border-radius: 16px;
+  border-radius: var(--border-radius-medium);
   font-size: 14px;
 
   @include tablet-above {
     width: -moz-fit-content;
     width: fit-content;
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
     margin-left: calc(var(--container-padding-x) * -1);
   }
 
@@ -55,11 +55,11 @@
     align-items: center;
     font-size: 36px;
     font-family: var(--font-family-accent);
-    border-radius: 0 0 16px 16px;
+    border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
 
     @include tablet-above {
       width: 170px;
-      border-radius: 0 16px 16px 0;
+      border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
     }
 
     & svg {

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--datepicker-->
     <link
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css"
@@ -10,6 +11,12 @@
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <!--swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Travellian</title>
@@ -67,7 +74,7 @@
     </header>
 
     <main class="content">
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">
             Start your unforgettable<br />journey with us.
@@ -140,7 +147,7 @@
                     <g clip-path="url(#clip0_65_4204)">
                       <path
                         d="M59.2012 23.7466C60.2662 22.6816 60.2662 20.9548 59.2012 19.8897L41.8448 2.53342C40.7798 1.46835 39.0532 1.46835 37.9879 2.53342C36.9229 3.5985 36.9229 5.3253 37.9879 6.39035L53.4158 21.8182L37.9879 37.2461C36.9229 38.3111 36.9229 40.0377 37.9879 41.103C39.0532 42.168 40.7798 42.168 41.8448 41.103L59.2012 23.7466ZM4.76852e-07 24.5454H57.2727V19.0909H0L4.76852e-07 24.5454Z"
-                        fill="#55281D"
+                        fill="white"
                       />
                     </g>
                     <defs>
@@ -152,6 +159,238 @@
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title">Popular Destinations</h2>
+            <div class="section__description">
+              Most popular destinations around the world, from historical places
+              to natural wonders.
+            </div>
+          </header>
+          <div class="section__body popular">
+            <div class="swiper">
+              <ul class="swiper-wrapper popular__list">
+                <li class="swiper-slide popular__item">
+                  <a href="#" class="popular__link">
+                    <article class="popular__card">
+                      <img
+                        src="./images/destination/1.png"
+                        alt="Monument of Berlin"
+                        class="popular__img"
+                        loading="lazy"
+                      />
+                      <div class="popular__description">
+                        <div class="popular__name">Monument of Berlin</div>
+                        <div class="popular__location">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span>Berlin, Germany</span>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="swiper-slide popular__item">
+                  <a href="#" class="popular__link">
+                    <article class="popular__card">
+                      <img
+                        src="./images/destination/2.png"
+                        alt="Millennium Bridge"
+                        class="popular__img"
+                        loading="lazy"
+                      />
+                      <div class="popular__description">
+                        <div class="popular__name">Millennium Bridge</div>
+                        <div class="popular__location">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span>London, United Kingdom</span>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="swiper-slide popular__item">
+                  <a href="#" class="popular__link">
+                    <article class="popular__card">
+                      <img
+                        src="./images/destination/3.png"
+                        alt="Rialto Bridge"
+                        class="popular__img"
+                        loading="lazy"
+                      />
+                      <div class="popular__description">
+                        <div class="popular__name">Rialto Bridge</div>
+                        <div class="popular__location">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span>Venice, Italy</span>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="swiper-slide popular__item">
+                  <a href="#" class="popular__link">
+                    <article class="popular__card">
+                      <img
+                        src="./images/destination/4.png"
+                        alt="Bali"
+                        class="popular__img"
+                        loading="lazy"
+                      />
+                      <div class="popular__description">
+                        <div class="popular__name">Bali</div>
+                        <div class="popular__location">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span>Thailand, Asia</span>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="swiper-slide popular__item">
+                  <a href="#" class="popular__link">
+                    <article class="popular__card">
+                      <img
+                        src="./images/destination/5.png"
+                        alt="Sahara Desert"
+                        class="popular__img"
+                        loading="lazy"
+                      />
+                      <div class="popular__description">
+                        <div class="popular__name">Sahara Desert</div>
+                        <div class="popular__location">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span>Merzouga, Africa</span>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="section__controls">
+              <button
+                class="swiper-button-prev section__button button button-dark"
+                type="button"
+              >
+                <span class="visually-hidden"> Previous slide </span>
+                <svg
+                  width="12"
+                  height="22"
+                  viewBox="0 0 12 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1L1 11L11 21"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-next section__button button button-primary"
+                type="button"
+              >
+                <span class="visually-hidden"> Next slide </span>
+                <svg
+                  width="12"
+                  height="22"
+                  viewBox="0 0 12 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 21L11 11L0.999999 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,86 @@
+.section {
+  &:not(:last-child) {
+    margin-bottom: 80px;
+
+    @include desktop-above {
+      margin-bottom: 100px;
+    }
+
+    @include desktop-l-above {
+      margin-bottom: 140px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: var(--color-primary);
+
+      @include tablet-above {
+        width: 70%;
+      }
+    }
+  }
+
+  &__description {
+    color: var(--color-gray);
+
+    @include tablet-above {
+      max-width: 744px;
+    }
+
+    @include desktop-l-above {
+      max-width: unset;
+    }
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    margin-top: 100px;
+
+    @include desktop-above {
+      position: absolute;
+      top: -166px;
+      right: var(--container-padding-x);
+      margin-top: 0;
+    }
+
+    @include desktop-xl {
+      right: calc((100vw - 1556px) / 2);
+    }
+  }
+
+  &__button {
+    margin: 0;
+    position: relative;
+    width: 60px;
+    height: 66px;
+    border-radius: var(--border-radius-small);
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
