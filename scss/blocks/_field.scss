@@ -20,10 +20,6 @@
     background-color: var(--color-light);
     color: var(--color-dark);
 
-    &:focus {
-      color: var(--color-primary);
-    }
-
     &::placeholder {
       color: var(--color-dark);
     }

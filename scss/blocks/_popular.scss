@@ -1,7 +1,10 @@
 .popular {
   position: relative;
   color: var(--color-light);
-  margin-right: calc(var(--container-padding-x) * -1);
+
+  @include tablet-above {
+    margin-right: calc(var(--container-padding-x) * -1);
+  }
 
   @include desktop-xl {
     margin-right: calc((100vw - 1556px) / -2);

@@ -1,8 +1,14 @@
-//datapickers for book form
 $(function () {
   $("#checkIn").datepicker({
+    minDate: 0,
     altField: "#checkIn",
     altFormat: "D, dth M yy",
+    firstDay: 1,
+    onSelect: function (selected) {
+      var dt = new Date(selected);
+      dt.setDate(dt.getDate() + 1);
+      $("#checkOut").datepicker("option", "minDate", dt);
+    },
   });
 });
 
@@ -10,29 +16,33 @@ $(function () {
   $("#checkOut").datepicker({
     altField: "#checkOut",
     altFormat: "D, dth M yy",
+    firstDay: 1,
   });
 });
 
 //swipper
-const swiper = new Swiper(".swiper", {
+const popularSwiper = new Swiper("#swiperPopular", {
   // Optional parameters
   slidesPerView: "auto",
   loop: true,
   spaceBetween: 32,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
+  // Navigation arrows
+  navigation: {
+    nextEl: "#popular-next",
+    prevEl: "#popular-prev",
   },
+});
+
+const offerSwiper = new Swiper("#offerSwiper", {
+  // Optional parameters
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 32,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+    nextEl: "#offer-next",
+    prevEl: "#offer-prev",
   },
 });

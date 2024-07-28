@@ -13,6 +13,32 @@
 
   &__header {
     margin-bottom: 100px;
+
+    &-right {
+      @include tablet-above {
+        text-align: right;
+      }
+
+      & > .section__title:after {
+        @include tablet-above {
+          left: unset;
+          right: 0;
+        }
+      }
+
+      & > .section__description {
+        @include tablet-above {
+          max-width: unset;
+        }
+      }
+
+      & + .section__body > .section__controls {
+        @include desktop-above {
+          right: unset;
+          left: 0;
+        }
+      }
+    }
   }
 
   &__title {
@@ -55,7 +81,7 @@
   &__controls {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 40px;
     margin-top: 100px;
 
@@ -74,6 +100,8 @@
   &__button {
     margin: 0;
     position: relative;
+    left: unset;
+    right: unset;
     width: 60px;
     height: 66px;
     border-radius: var(--border-radius-small);

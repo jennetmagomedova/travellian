@@ -723,9 +723,6 @@ h3 {
   background-color: var(--color-light);
   color: var(--color-dark);
 }
-.field__input:focus {
-  color: var(--color-primary);
-}
 .field__input::placeholder {
   color: var(--color-dark);
 }
@@ -748,6 +745,28 @@ h3 {
 }
 .section__header {
   margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .section__header-right {
+    text-align: right;
+  }
+}
+@media (min-width: 768px) {
+  .section__header-right > .section__title:after {
+    left: unset;
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .section__header-right > .section__description {
+    max-width: unset;
+  }
+}
+@media (min-width: 1152px) {
+  .section__header-right + .section__body > .section__controls {
+    right: unset;
+    left: 0;
+  }
 }
 .section__title {
   display: inline-block;
@@ -788,7 +807,7 @@ h3 {
 .section__controls {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 40px;
   margin-top: 100px;
 }
@@ -808,6 +827,8 @@ h3 {
 .section__button {
   margin: 0;
   position: relative;
+  left: unset;
+  right: unset;
   width: 60px;
   height: 66px;
   border-radius: var(--border-radius-small);
@@ -819,7 +840,11 @@ h3 {
 .popular {
   position: relative;
   color: var(--color-light);
-  margin-right: calc(var(--container-padding-x) * -1);
+}
+@media (min-width: 768px) {
+  .popular {
+    margin-right: calc(var(--container-padding-x) * -1);
+  }
 }
 @media (min-width: 1920px) {
   .popular {
@@ -875,4 +900,142 @@ h3 {
   align-items: center;
   justify-content: flex-start;
   column-gap: 16px;
+}
+
+.offer {
+  position: relative;
+}
+.offer__link {
+  display: block;
+}
+.offer__item {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .offer__item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media (min-width: 1152px) {
+  .offer__item {
+    width: calc((100% - 64px) / 3);
+  }
+}
+.offer__card {
+  position: relative;
+  width: 100%;
+}
+.offer__header {
+  width: 100%;
+  height: 286px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.offer__image {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+}
+.offer__description {
+  background-color: var(--color-yellow-light);
+  padding: 20px;
+  border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
+}
+.offer__name {
+  font-size: 28px;
+  color: var(--color-gray);
+  margin-bottom: 8px;
+}
+.offer__rating {
+  display: flex;
+  column-gap: 4px;
+  margin-bottom: 24px;
+}
+.offer__rating svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+  fill: var(--color-yellow);
+  color: var(--color-yellow);
+}
+.offer__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .offer__text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.offer__footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+@media (min-width: 768px) {
+  .offer__footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+  }
+}
+.offer__price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+  color: var(--color-gray);
+}
+.offer__amount {
+  font-size: 32px;
+  color: var(--color-primary);
+}
+.offer__button {
+  width: 127px;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  border-radius: var(--border-radius-small);
+  font-size: 20px;
+}
+
+.ui-widget {
+  font-family: var(--font-family-base);
+  color: var(--color-dark);
+  font-size: 16px;
+}
+
+.ui-widget-header {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+.ui-button:hover,
+.ui-button:focus {
+  border: 1px solid var(--color-dark);
+  background: var(--color-light);
+  font-weight: normal;
+  color: var(--color-dark);
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.ui-datepicker table {
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */
