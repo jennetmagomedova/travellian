@@ -65,6 +65,10 @@
   &__description {
     color: var(--color-gray);
 
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
     @include tablet-above {
       max-width: 744px;
     }
@@ -111,5 +115,10 @@
     &::before {
       display: none;
     }
+  }
+
+  &__all {
+    padding: 20px;
+    border-radius: var(--border-radius-small);
   }
 }
