@@ -37,7 +37,7 @@ const popularSwiper = new Swiper("#swiperPopular", {
 const offerSwiper = new Swiper("#offerSwiper", {
   // Optional parameters
   slidesPerView: "auto",
-  loop: true,
+  loop: false,
   spaceBetween: 32,
 
   // Navigation arrows
