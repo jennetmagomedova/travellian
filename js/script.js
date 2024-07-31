@@ -46,3 +46,16 @@ const offerSwiper = new Swiper("#offerSwiper", {
     prevEl: "#offer-prev",
   },
 });
+
+const reviewsSwiper = new Swiper("#reviewSwiper", {
+  // Optional parameters
+  slidesPerView: "auto",
+  loop: false,
+  spaceBetween: 32,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: "#reviews-next",
+    prevEl: "#reviews-prev",
+  },
+});

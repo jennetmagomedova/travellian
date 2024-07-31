@@ -1,0 +1,57 @@
+.review-card {
+  position: relative;
+  width: 100%;
+
+  @include tablet-above {
+    width: 500px;
+  }
+
+  @include desktop-xl {
+    width: 650px;
+  }
+
+  &__cover {
+    @include square(100px);
+    margin-left: 20px;
+
+    @include tablet-above {
+      margin-left: 40px;
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    padding: 60px 20px 32px 20px;
+    background-color: var(--color-light-alt);
+    color: var(--color-gray);
+    border-radius: var(--border-radius-small);
+    margin-top: -35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @include tablet-above {
+      padding: 60px 40px 40px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  &__name {
+    font-family: var(--font-family-accent);
+    font-size: 24px;
+    font-style: normal;
+  }
+
+  &__company {
+    font-style: normal;
+  }
+}

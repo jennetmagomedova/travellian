@@ -1,0 +1,7 @@
+.reviews {
+  &__item {
+    @include tablet-above {
+      width: auto;
+    }
+  }
+}
