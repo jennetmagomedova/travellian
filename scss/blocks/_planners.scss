@@ -10,7 +10,7 @@
       gap: 40px;
     }
 
-    @include desktop-above {
+    @include desktop-l-above {
       grid-template-columns: repeat(4, 1fr);
     }
   }
