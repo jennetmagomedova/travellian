@@ -1,6 +1,7 @@
 .subscribe__form {
   &-wrapper {
     padding: 40px 20px;
+    background-color: var(--color-light);
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
     border-radius: var(--border-radius-large);
     display: flex;
@@ -12,10 +13,12 @@
     }
 
     @include desktop-above {
-      padding-inline: 60px;
+      padding-block: 60px;
       flex-direction: row;
       align-items: center;
       column-gap: 60px;
+      margin-bottom: -118px;
+      position: relative;
     }
 
     @include desktop-l-above {
@@ -26,6 +29,7 @@
 
   &-title {
     color: var(--color-gray);
+    width: 100%;
   }
 
   &-body {

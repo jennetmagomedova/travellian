@@ -1,0 +1,55 @@
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    padding-block: 80px;
+
+    @include desktop-above {
+      padding-block: 240px 140px;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__menu-list,
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  &__contacts-item address {
+    font-style: normal;
+  }
+
+  &__soc1als-list {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  &__soc1als-link svg {
+    @include square(32px);
+    fill: var(--color-light);
+    color: var(--color-light);
+  }
+}
