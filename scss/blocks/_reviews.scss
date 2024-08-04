@@ -1,5 +1,11 @@
 .reviews {
+  &__list {
+    align-items: stretch;
+    height: 100%;
+  }
+
   &__item {
+    height: auto;
     @include tablet-above {
       width: auto;
     }

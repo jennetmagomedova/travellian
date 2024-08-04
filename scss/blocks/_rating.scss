@@ -5,6 +5,8 @@
 
   &__star {
     @include square(24px);
+    color: transparent;
+    stroke: var(--color-yellow);
 
     &-full {
       color: var(--color-yellow);

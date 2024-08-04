@@ -20,42 +20,18 @@ $(function () {
   });
 });
 
-//swipper
-const popularSwiper = new Swiper("#swiperPopular", {
-  // Optional parameters
-  slidesPerView: "auto",
-  loop: true,
-  spaceBetween: 32,
+//swipers
+const swipers = document.querySelectorAll(".swiper");
+swipers.forEach((swiper) => {
+  const controls = swiper.previousElementSibling;
+  new Swiper(swiper, {
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: "#popular-next",
-    prevEl: "#popular-prev",
-  },
-});
-
-const offerSwiper = new Swiper("#offerSwiper", {
-  // Optional parameters
-  slidesPerView: "auto",
-  loop: false,
-  spaceBetween: 32,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: "#offer-next",
-    prevEl: "#offer-prev",
-  },
-});
-
-const reviewsSwiper = new Swiper("#reviewSwiper", {
-  // Optional parameters
-  slidesPerView: "auto",
-  loop: false,
-  spaceBetween: 32,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: "#reviews-next",
-    prevEl: "#reviews-prev",
-  },
+    navigation: {
+      nextEl: controls.querySelector(".swiper-button-next"),
+      prevEl: controls.querySelector(".swiper-button-prev"),
+    },
+  });
 });

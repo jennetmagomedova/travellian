@@ -64,4 +64,14 @@
     justify-content: flex-start;
     column-gap: 16px;
   }
+
+  & > .section__controls {
+    @include tablet-above {
+      right: calc(var(--container-padding-x));
+    }
+
+    @include desktop-xl {
+      right: calc((100vw - 1556px) / 2);
+    }
+  }
 }

@@ -172,10 +172,55 @@
             </div>
           </header>
           <div class="section__body popular">
+            <div class="section__controls">
+              <button
+                class="swiper-button-prev section__button button button-dark"
+                type="button"
+              >
+                <span class="visually-hidden"> Previous slide </span>
+                <svg
+                  width="12"
+                  height="22"
+                  viewBox="0 0 12 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1L1 11L11 21"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-next section__button button button-primary"
+                type="button"
+              >
+                <span class="visually-hidden"> Next slide </span>
+                <svg
+                  width="12"
+                  height="22"
+                  viewBox="0 0 12 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 21L11 11L0.999999 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
             <div class="swiper" id="swiperPopular">
               <ul class="swiper-wrapper popular__list">
                 <li class="swiper-slide popular__item">
                   <a href="#" class="popular__link">
+                    <span class="visually-hidden">Monument of Berlin</span>
                     <article class="popular__card">
                       <img
                         src="./images/destination/1.png"
@@ -210,6 +255,7 @@
                 </li>
                 <li class="swiper-slide popular__item">
                   <a href="#" class="popular__link">
+                    <span class="visually-hidden">Millennium Bridge</span>
                     <article class="popular__card">
                       <img
                         src="./images/destination/2.png"
@@ -244,6 +290,7 @@
                 </li>
                 <li class="swiper-slide popular__item">
                   <a href="#" class="popular__link">
+                    <span class="visually-hidden">Rialto Bridge</span>
                     <article class="popular__card">
                       <img
                         src="./images/destination/3.png"
@@ -278,6 +325,7 @@
                 </li>
                 <li class="swiper-slide popular__item">
                   <a href="#" class="popular__link">
+                    <span class="visually-hidden">Bali</span>
                     <article class="popular__card">
                       <img
                         src="./images/destination/4.png"
@@ -312,6 +360,7 @@
                 </li>
                 <li class="swiper-slide popular__item">
                   <a href="#" class="popular__link">
+                    <span class="visually-hidden">Sahara Desert</span>
                     <article class="popular__card">
                       <img
                         src="./images/destination/5.png"
@@ -344,53 +393,77 @@
                     </article>
                   </a>
                 </li>
+                <li class="swiper-slide popular__item">
+                  <a href="#" class="popular__link">
+                    <span class="visually-hidden">Leaning Tower of Pisa</span>
+                    <article class="popular__card">
+                      <img
+                        src="./images/destination/6.png"
+                        alt="Leaning Tower of Pisa"
+                        class="popular__img"
+                        loading="lazy"
+                      />
+                      <div class="popular__description">
+                        <div class="popular__name">Leaning Tower of Pisa</div>
+                        <div class="popular__location">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span>Pisa, Italy</span>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
+                <li class="swiper-slide popular__item">
+                  <a href="#" class="popular__link">
+                    <span class="visually-hidden">Taj Mahal</span>
+                    <article class="popular__card">
+                      <img
+                        src="./images/destination/7.png"
+                        alt="Taj Mahal"
+                        class="popular__img"
+                        loading="lazy"
+                      />
+                      <div class="popular__description">
+                        <div class="popular__name">Taj Mahal</div>
+                        <div class="popular__location">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.5625 8.4375C3.5625 12.6054 6.74442 17.1274 9.55209 21.0351C10.2195 21.9634 10.8588 22.8526 11.415 23.6869C11.5454 23.8826 11.7652 24 12 24C12.2347 24 12.4545 23.8826 12.585 23.6869C13.1411 22.8526 13.7804 21.9634 14.4478 21.0351C17.2556 17.1274 20.4375 12.6054 20.4375 8.4375C20.4375 3.78478 16.6527 0 12 0C7.34728 0 3.5625 3.78478 3.5625 8.4375ZM16.2188 8.4375C16.2188 10.7639 14.3264 12.6562 12 12.6562C9.67364 12.6562 7.78125 10.7639 7.78125 8.4375C7.78125 6.11114 9.67364 4.21875 12 4.21875C14.3264 4.21875 16.2188 6.11114 16.2188 8.4375Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M12 11.25C13.5533 11.25 14.8125 9.9908 14.8125 8.4375C14.8125 6.8842 13.5533 5.625 12 5.625C10.4467 5.625 9.1875 6.8842 9.1875 8.4375C9.1875 9.9908 10.4467 11.25 12 11.25Z"
+                              fill="white"
+                            />
+                          </svg>
+                          <span>Agra, India</span>
+                        </div>
+                      </div>
+                    </article>
+                  </a>
+                </li>
               </ul>
-            </div>
-            <div class="section__controls">
-              <button
-                class="section__button button button-dark"
-                id="popular-prev"
-                type="button"
-              >
-                <span class="visually-hidden"> Previous slide </span>
-                <svg
-                  width="12"
-                  height="22"
-                  viewBox="0 0 12 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11 1L1 11L11 21"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <button
-                class="section__button button button-primary"
-                id="popular-next"
-                type="button"
-              >
-                <span class="visually-hidden"> Next slide </span>
-                <svg
-                  width="12"
-                  height="22"
-                  viewBox="0 0 12 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 21L11 11L0.999999 1"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
@@ -405,330 +478,9 @@
             </div>
           </header>
           <div class="section__body offer">
-            <div class="swiper" id="offerSwiper">
-              <ul class="swiper-wrapper offer__list">
-                <li class="swiper-slide offer__item">
-                  <a href="#" class="offer__link">
-                    <article class="offer__card">
-                      <div class="offer__header">
-                        <img
-                          src="./images/offers/1.png"
-                          alt="Lisbon, Portugal"
-                          class="offer__image"
-                        />
-                      </div>
-                      <div class="offer__description">
-                        <div class="offer__name">Lisbon, Portugal</div>
-                        <div class="offer__rating rating">
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                        </div>
-                        <div class="offer__text">
-                          5 nights and 4 days in 5 star hotel, breakfast and
-                          lunch included. Very popular during the renaissance.
-                          Passage and going through the cites of the world in
-                          classical literature.
-                        </div>
-                        <div class="offer__footer">
-                          <div class="offer__price">
-                            <span>From</span>
-                            <span class="offer__amount">€500</span>
-                          </div>
-                          <a
-                            href="#"
-                            class="offer__button button button-primary"
-                            >Details</a
-                          >
-                        </div>
-                      </div>
-                    </article>
-                  </a>
-                </li>
-                <li class="swiper-slide offer__item">
-                  <a href="#" class="offer__link">
-                    <article class="offer__card">
-                      <div class="offer__header">
-                        <img
-                          src="./images/offers/2.png"
-                          alt="Athens, Greece"
-                          class="offer__image"
-                        />
-                      </div>
-
-                      <div class="offer__description">
-                        <div class="offer__name">Athens, Greece</div>
-                        <div class="offer__rating rating">
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                        </div>
-                        <div class="offer__text">
-                          5 nights and 4 days in 5 star hotel, breakfast and
-                          lunch included. Very popular during the renaissance.
-                          Passage and going through the cites of the world in
-                          classical literature.
-                        </div>
-                        <div class="offer__footer">
-                          <div class="offer__price">
-                            <span>From</span>
-                            <span class="offer__amount">$800</span>
-                          </div>
-                          <a
-                            href="#"
-                            class="offer__button button button-primary"
-                            >Details</a
-                          >
-                        </div>
-                      </div>
-                    </article>
-                  </a>
-                </li>
-                <li class="swiper-slide offer__item">
-                  <a href="#" class="offer__link">
-                    <article class="offer__card">
-                      <div class="offer__header">
-                        <img
-                          src="./images/offers/3.png"
-                          alt="Rome, Italy"
-                          class="offer__image"
-                        />
-                      </div>
-                      <div class="offer__description">
-                        <div class="offer__name">Rome, Italy</div>
-                        <div class="offer__rating rating">
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                          <svg
-                            class="rating__star rating__star-full"
-                            alt="rating star"
-                            width="60"
-                            height="60"
-                            viewBox="0 0 60 60"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
-                              fill="#55281D"
-                            />
-                          </svg>
-                        </div>
-                        <div class="offer__text">
-                          5 nights and 4 days in 5 star hotel, breakfast and
-                          lunch included. Very popular during the renaissance.
-                          Passage and going through the cites of the world in
-                          classical literature.
-                        </div>
-                        <div class="offer__footer">
-                          <div class="offer__price">
-                            <span>From</span>
-                            <span class="offer__amount">$750</span>
-                          </div>
-                          <a
-                            href="#"
-                            class="offer__button button button-primary"
-                            >Details</a
-                          >
-                        </div>
-                      </div>
-                    </article>
-                  </a>
-                </li>
-              </ul>
-            </div>
             <div class="section__controls">
               <button
                 class="swiper-button-prev section__button button button-dark"
-                id="offer-prev"
                 type="button"
               >
                 <span class="visually-hidden"> Previous slide </span>
@@ -750,7 +502,6 @@
               </button>
               <button
                 class="swiper-button-next section__button button button-primary"
-                id="offer-next"
                 type="button"
               >
                 <span class="visually-hidden"> Next slide </span>
@@ -770,6 +521,617 @@
                   />
                 </svg>
               </button>
+            </div>
+            <div class="swiper">
+              <ul class="swiper-wrapper offer__list">
+                <li class="swiper-slide offer__item">
+                  <article class="offer__card">
+                    <div class="offer__header">
+                      <img
+                        src="./images/offers/1.png"
+                        alt="Lisbon, Portugal"
+                        class="offer__image"
+                      />
+                    </div>
+                    <div class="offer__description">
+                      <div class="offer__name">Lisbon, Portugal</div>
+                      <div class="offer__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <div class="offer__text">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch
+                        included. Very popular during the renaissance. Passage
+                        and going through the cites of the world in classical
+                        literature.
+                      </div>
+                      <div class="offer__footer">
+                        <div class="offer__price">
+                          <span>From</span>
+                          <span class="offer__amount">€500</span>
+                        </div>
+                        <a href="#" class="offer__button button button-primary"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide offer__item">
+                  <article class="offer__card">
+                    <div class="offer__header">
+                      <img
+                        src="./images/offers/2.png"
+                        alt="Athens, Greece"
+                        class="offer__image"
+                      />
+                    </div>
+
+                    <div class="offer__description">
+                      <div class="offer__name">Athens, Greece</div>
+                      <div class="offer__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <div class="offer__text">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch
+                        included. Very popular during the renaissance. Passage
+                        and going through the cites of the world in classical
+                        literature.
+                      </div>
+                      <div class="offer__footer">
+                        <div class="offer__price">
+                          <span>From</span>
+                          <span class="offer__amount">$800</span>
+                        </div>
+                        <a href="#" class="offer__button button button-primary"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide offer__item">
+                  <article class="offer__card">
+                    <div class="offer__header">
+                      <img
+                        src="./images/offers/3.png"
+                        alt="Rome, Italy"
+                        class="offer__image"
+                      />
+                    </div>
+                    <div class="offer__description">
+                      <div class="offer__name">Rome, Italy</div>
+                      <div class="offer__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <div class="offer__text">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch
+                        included. Very popular during the renaissance. Passage
+                        and going through the cites of the world in classical
+                        literature.
+                      </div>
+                      <div class="offer__footer">
+                        <div class="offer__price">
+                          <span>From</span>
+                          <span class="offer__amount">$750</span>
+                        </div>
+                        <a href="#" class="offer__button button button-primary"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide offer__item">
+                  <article class="offer__card">
+                    <div class="offer__header">
+                      <img
+                        src="./images/offers/4.png"
+                        alt="Sydney, Australia"
+                        class="offer__image"
+                      />
+                    </div>
+                    <div class="offer__description">
+                      <div class="offer__name">Sydney, Australia</div>
+                      <div class="offer__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <div class="offer__text">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch
+                        included. Very popular during the renaissance. Passage
+                        and going through the cites of the world in classical
+                        literature.
+                      </div>
+                      <div class="offer__footer">
+                        <div class="offer__price">
+                          <span>From</span>
+                          <span class="offer__amount">$950</span>
+                        </div>
+                        <a href="#" class="offer__button button button-primary"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide offer__item">
+                  <article class="offer__card">
+                    <div class="offer__header">
+                      <img
+                        src="./images/offers/5.png"
+                        alt="New York, USA"
+                        class="offer__image"
+                      />
+                    </div>
+                    <div class="offer__description">
+                      <div class="offer__name">New York, USA</div>
+                      <div class="offer__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <div class="offer__text">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch
+                        included. Very popular during the renaissance. Passage
+                        and going through the cites of the world in classical
+                        literature.
+                      </div>
+                      <div class="offer__footer">
+                        <div class="offer__price">
+                          <span>From</span>
+                          <span class="offer__amount">$950</span>
+                        </div>
+                        <a href="#" class="offer__button button button-primary"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide offer__item">
+                  <article class="offer__card">
+                    <div class="offer__header">
+                      <img
+                        src="./images/offers/6.png"
+                        alt="Rio de Janeiro, Brazil"
+                        class="offer__image"
+                      />
+                    </div>
+                    <div class="offer__description">
+                      <div class="offer__name">Rio de Janeiro, Brazil</div>
+                      <div class="offer__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <div class="offer__text">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch
+                        included. Very popular during the renaissance. Passage
+                        and going through the cites of the world in classical
+                        literature.
+                      </div>
+                      <div class="offer__footer">
+                        <div class="offer__price">
+                          <span>From</span>
+                          <span class="offer__amount">$800</span>
+                        </div>
+                        <a href="#" class="offer__button button button-primary"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -846,7 +1208,8 @@
             <ul class="planners__list">
               <li class="planners__item">
                 <a href="#" class="planners__link">
-                  <article class="planners_card">
+                  <span class="visually-hidden">Rome City Tour</span>
+                  <article class="planners__card">
                     <div class="planners__cover">
                       <img
                         src="./images/planners/1.png"
@@ -941,7 +1304,8 @@
               </li>
               <li class="planners__item">
                 <a href="#" class="planners__link">
-                  <article class="planners_card">
+                  <span class="visually-hidden">Paris City Tour</span>
+                  <article class="planners__card">
                     <div class="planners__cover">
                       <img
                         src="./images/planners/2.png"
@@ -1036,7 +1400,8 @@
               </li>
               <li class="planners__item">
                 <a href="#" class="planners__link">
-                  <article class="planners_card">
+                  <span class="visually-hidden">Barcelona City Tour</span>
+                  <article class="planners__card">
                     <div class="planners__cover">
                       <img
                         src="./images/planners/3.png"
@@ -1131,7 +1496,8 @@
               </li>
               <li class="planners__item">
                 <a href="#" class="planners__link">
-                  <article class="planners_card">
+                  <span class="visually-hidden">Budapest City Tour</span>
+                  <article class="planners__card">
                     <div class="planners__cover">
                       <img
                         src="./images/planners/4.png"
@@ -1291,7 +1657,51 @@
             </div>
           </header>
           <div class="section__body reviews">
-            <div class="swiper" id="reviewSwiper">
+            <div class="section__controls">
+              <button
+                class="swiper-button-prev section__button button button-dark"
+                type="button"
+              >
+                <span class="visually-hidden"> Previous slide </span>
+                <svg
+                  width="12"
+                  height="22"
+                  viewBox="0 0 12 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1L1 11L11 21"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-next section__button button button-primary"
+                type="button"
+              >
+                <span class="visually-hidden"> Next slide </span>
+                <svg
+                  width="12"
+                  height="22"
+                  viewBox="0 0 12 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 21L11 11L0.999999 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="swiper">
               <ul class="swiper-wrapper reviews__list">
                 <li class="swiper-slide reviews__item">
                   <blockquote class="review-card">
@@ -1304,11 +1714,12 @@
                     </div>
                     <div class="review-card__wrapper">
                       <div class="review-card__body">
-                        But I must explain to you how all this mistaken idea of
-                        denouncing pleasure and praising pain was born and I
-                        will give you a complete account of the system and
-                        expound the actual teachings of the great explorer of
-                        the truth, the master- builder of human happiness.
+                        I found the service and response of this travel agency
+                        to be excellent. Without our wonderful tour guide, and
+                        driver this trip would be incomplete. Our tour guide was
+                        really patient and understand that people from different
+                        cultures and background would extra time to absorb all
+                        information about history
                       </div>
                       <div class="review-card__rating rating">
                         <svg
@@ -1585,53 +1996,202 @@
                     </div>
                   </blockquote>
                 </li>
+                <li class="swiper-slide reviews__item">
+                  <blockquote class="review-card">
+                    <div class="review-card__cover">
+                      <img
+                        src="./images/reviews/4.png"
+                        alt="Tamara Bellis"
+                        class="review-card__image"
+                      />
+                    </div>
+                    <div class="review-card__wrapper">
+                      <div class="review-card__body">
+                        But I must explain to you how all this mistaken idea of
+                        denouncing pleasure and praising pain was born and I
+                        will give you a complete account of the system and
+                        expound the actual teachings of the great explorer of
+                        the truth, the master- builder of human happiness.
+                      </div>
+                      <div class="review-card__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <footer class="review-card__footer">
+                        <cite class="review-card__name">April Miller</cite>
+                        <cite class="review-card__company">Student</cite>
+                      </footer>
+                    </div>
+                  </blockquote>
+                </li>
+                <li class="swiper-slide reviews__item">
+                  <blockquote class="review-card">
+                    <div class="review-card__cover">
+                      <img
+                        src="./images/reviews/5.png"
+                        alt="Tamara Bellis"
+                        class="review-card__image"
+                      />
+                    </div>
+                    <div class="review-card__wrapper">
+                      <div class="review-card__body">
+                        The only reason I'm not giving this travel agency
+                        5-stars is because our tour was very good, but not
+                        over-the-top fantastic, so there is room for improvement
+                        (or, for travellers, some reason to consider other
+                        options). While a nice tour, we found the English of our
+                        private guide to only be good, not excellent (I could
+                        only understand about 85 to 90% of what he said), and
+                        the tour was somewhat "standard."
+                      </div>
+                      <div class="review-card__rating rating">
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star rating__star-full"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                        <svg
+                          class="rating__star"
+                          alt="rating star"
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M30 5.00012L37.725 20.6501L55 23.1751L42.5 35.3502L45.45 52.5502L30 44.4252L14.55 52.5502L17.5 35.3502L5 23.1751L22.275 20.6501L30 5.00012Z"
+                            fill="#55281D"
+                          />
+                        </svg>
+                      </div>
+                      <footer class="review-card__footer">
+                        <cite class="review-card__name">Eric Thomas</cite>
+                        <cite class="review-card__company">Osteopath</cite>
+                      </footer>
+                    </div>
+                  </blockquote>
+                </li>
               </ul>
-            </div>
-            <div class="section__controls">
-              <button
-                class="section__button button button-dark"
-                id="reviews-prev"
-                type="button"
-              >
-                <span class="visually-hidden"> Previous slide </span>
-                <svg
-                  width="12"
-                  height="22"
-                  viewBox="0 0 12 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11 1L1 11L11 21"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <button
-                class="section__button button button-primary"
-                id="reviews-next"
-                type="button"
-              >
-                <span class="visually-hidden"> Next slide </span>
-                <svg
-                  width="12"
-                  height="22"
-                  viewBox="0 0 12 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 21L11 11L0.999999 1"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
@@ -1667,7 +2227,6 @@
 
     <footer class="footer">
       <div class="footer__inner container">
-        <h2 class="visually-hidden">Footer</h2>
         <div class="footer__row">
           <a href="#" class="footer__logo logo">
             <img
@@ -1684,7 +2243,7 @@
           </div>
         </div>
         <div class="footer__row">
-          <h3 class="footer__title">Menu</h3>
+          <h2 class="footer__title">Menu</h2>
           <nav class="footer__menu">
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
@@ -1706,7 +2265,7 @@
           </nav>
         </div>
         <div class="footer__row">
-          <h3 class="footer__title">Information</h3>
+          <h2 class="footer__title">Information</h2>
           <nav class="footer__menu">
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
@@ -1725,13 +2284,15 @@
           </nav>
         </div>
         <div class="footer__row footer__contacts">
-          <h3 class="footer__title">Contact Info</h3>
+          <h2 class="footer__title">Contact Info</h2>
           <ul class="footer__contacts-list">
             <li class="footer__contacts-item">
-              <a tel="+123456789" class="footer__contacts-link">+123 456 789</a>
+              <a href="tel:+123456789" class="footer__contacts-link"
+                >+123 456 789</a
+              >
             </li>
             <li class="footer__contacts-item">
-              <a mailto="info@travellian.com" class="footer__contacts-link"
+              <a href="mailto:info@travellian.com" class="footer__contacts-link"
                 >info@travellian.com</a
               >
             </li>
@@ -1741,7 +2302,7 @@
           </ul>
         </div>
         <div class="footer__row footer__soc1als">
-          <h3 class="footer__title">Follow us on</h3>
+          <h2 class="footer__title">Follow us on</h2>
           <ul class="footer__soc1als-list">
             <li class="footer__soc1als-item">
               <a href="#" class="footer__soc1als-link">

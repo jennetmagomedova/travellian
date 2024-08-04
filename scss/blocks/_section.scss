@@ -87,7 +87,11 @@
     align-items: center;
     justify-content: center;
     column-gap: 40px;
-    margin-top: 100px;
+    margin-bottom: 60px;
+
+    @include mobile-above {
+      margin-bottom: 100px;
+    }
 
     @include desktop-above {
       justify-content: space-between;
