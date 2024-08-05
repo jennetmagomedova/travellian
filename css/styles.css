@@ -628,13 +628,13 @@ h3 {
 }
 @media (min-width: 768px) {
   .hero {
-    background-image: url(".././images/hero/hero-1152.png");
+    background-image: url(".././images/hero/hero-1152.webp");
   }
 }
 @media (min-width: 1152px) {
   .hero {
     padding-top: 270px;
-    background-image: url(".././images/hero/hero-1440.png");
+    background-image: url(".././images/hero/hero-1440.webp");
   }
 }
 @media (min-width: 1440px) {
